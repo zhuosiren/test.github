@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>doctorview</class>
+ <widget class="QWidget" name="doctorview">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>医生管理</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="placeholderText">
+          <string>请输入姓名进行查找</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btSearch">
+         <property name="text">
+          <string>查找</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rsc.qrc">
+           <normaloff>:/img/search.svg</normaloff>:/img/search.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btAdd">
+         <property name="text">
+          <string>添加</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rsc.qrc">
+           <normaloff>:/img/add.svg</normaloff>:/img/add.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btDelete">
+         <property name="text">
+          <string>删除</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rsc.qrc">
+           <normaloff>:/img/delete.svg</normaloff>:/img/delete.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btEdit">
+         <property name="text">
+          <string>修改</string>
+         </property>
+         <property name="icon">
+          <iconset resource="rsc.qrc">
+           <normaloff>:/img/modify.svg</normaloff>:/img/modify.svg</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableView"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="rsc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
