@@ -2,7 +2,6 @@
 #define DOCTORVIEW_H
 
 #include <QWidget>
-#include <QDataWidgetMapper>
 
 namespace Ui {
 class doctorview;
@@ -25,9 +24,29 @@ private slots:
 
     void on_btAdd_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_btSortAscending_clicked();
+
+
+    void on_btSortAscending2_clicked();
+
+    // 新增导出按钮点击的槽函数声明
+    void on_btExport_clicked();
+    // 导出数据的函数声明
+    bool exportDoctorData(const QString& filePath);
+
+    // 新增导入按钮点击的槽函数声明
+    void on_btImport_clicked();
+    // 导入数据的函数声明
+    bool importDoctorData(const QString& filePath);
+
+signals:
+    void goDoctorEditView(int idx);
+
+
 private:
     Ui::doctorview *ui;
-    QDataWidgetMapper *dataMapper;
 
 };
 
